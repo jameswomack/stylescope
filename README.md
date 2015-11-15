@@ -34,6 +34,7 @@ scopedStyleSheet.lastPushedRuleIndexes
 ```
 
 ## Testing
+* `npm run _selenium & npm run _browserify`. Feel free to open a PR that makes this nicer
 * Uses Mochify w/ WebDriver. See the (https://github.com/mantoni/min-webdriver)[min-webdriver] repo for WebDriver config details.
   * Change `closeOnSuccess` or `closeOnFailure` to inspect the DOM after tests
 * The (https://github.com/mantoni/mochify.js)[Mochify] detais are useful as well

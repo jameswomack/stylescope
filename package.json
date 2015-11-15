@@ -21,7 +21,7 @@
     "cssstylerule"
   ],
   "author": "James J. Womack (@james_womack)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "amp-is-undefined": "1.0.1",
     "dashify": "0.2.0",
@@ -35,10 +35,7 @@
   "devDependencies": {
     "chai": "3.4.1",
     "chromedriver": "2.19.0",
-    "jsdom": "7.0.2",
-    "mocha": "2.3.3",
     "mochify": "2.14.1",
-    "rfile": "1.0.0",
     "selenium-server-standalone-jar": "2.47.1"
   }
 }
