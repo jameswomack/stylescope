@@ -1,0 +1,44 @@
+{
+  "name": "stylescope",
+  "version": "1.0.0",
+  "description": "Why comprimise? Grab your Stylescope and create elegantly.",
+  "main": "index.js",
+  "config": {
+    "sj": "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.47.1.jar",
+    "cd": "-Dwebdriver.chrome.driver=./node_modules/.bin/chromedriver"
+  },
+  "scripts": {
+    "_mochify": "mochify --wd ./test/specs/index.js -R spec",
+    "_selenium": "java -jar $npm_package_config_sj $npm_package_config_cd"
+  },
+  "keywords": [
+    "styl",
+    "style",
+    "css",
+    "scope",
+    "scoped",
+    "htmlelement",
+    "cssstylerule"
+  ],
+  "author": "James J. Womack (@james_womack)",
+  "license": "ISC",
+  "dependencies": {
+    "amp-is-undefined": "1.0.1",
+    "dashify": "0.2.0",
+    "deep-freeze": "0.0.1",
+    "keykey": "1.0.0",
+    "presuf": "1.0.0",
+    "uid": "0.0.2",
+    "unique-selector": "0.0.4",
+    "weakmap": "0.0.6"
+  },
+  "devDependencies": {
+    "chai": "3.4.1",
+    "chromedriver": "2.19.0",
+    "jsdom": "7.0.2",
+    "mocha": "2.3.3",
+    "mochify": "2.14.1",
+    "rfile": "1.0.0",
+    "selenium-server-standalone-jar": "2.47.1"
+  }
+}
