@@ -8,8 +8,10 @@
     "cd": "-Dwebdriver.chrome.driver=./node_modules/.bin/chromedriver"
   },
   "scripts": {
+    "test": "npm run _selenium && npm run _mochify && npm run _rm-pids",
+    "_rm-pids": "for f in ./test/*.pid; do kill $(<$f); done; rm ./test/*.pid",
     "_mochify": "mochify --wd ./test/specs/index.js -R spec",
-    "_selenium": "java -jar $npm_package_config_sj $npm_package_config_cd"
+    "_selenium": "java -jar $npm_package_config_sj $npm_package_config_cd & echo \"$!\" > test/selenium.pid"
   },
   "keywords": [
     "styl",
