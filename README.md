@@ -34,6 +34,6 @@ scopedStyleSheet.lastPushedRuleIndexes
 ```
 
 ## Testing
-* Uses Mochify w/ WebDriver. See the (https://github.com/mantoni/min-webdriver)[min-webdriver] repo for WebDriver config details.
+* Uses Mochify w/ WebDriver. See the [min-webdriver](https://github.com/mantoni/min-webdriver) repo for WebDriver config details.
   * Change `closeOnSuccess` or `closeOnFailure` to inspect the DOM after tests
-* The (https://github.com/mantoni/mochify.js)[Mochify] detais are useful as well
+* The [Mochify](https://github.com/mantoni/mochify.js) detais are useful as well
